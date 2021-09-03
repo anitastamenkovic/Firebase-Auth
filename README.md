@@ -16,8 +16,7 @@
       allow read: if request.auth.uid == userId;
     }
     
-    // Allow the user to access documents in the "guides" collection
-    // only if they are authenticated.
+    // Allow the user to access documents in the "guides" collection only if they are authenticated.
     match /guides/{guideId} {
       allow read: if request.auth.uid != null;
       allow write: if request.auth.token.admin == true;
