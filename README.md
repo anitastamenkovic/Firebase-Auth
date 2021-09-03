@@ -1,12 +1,12 @@
 # Firebase-Auth
  Firebase Authentication with email and password
- Using firebase database, authentication and functions
+ Using firebase database, authentication and functions (admin and user role)
  
  1. Create firebase database project and use your own config
  2. Create two collections - guides and users
  3. Change Rules
  
-// New rules
+// New rules for admin and users
 
  service cloud.firestore {
   match /databases/{database}/documents {
