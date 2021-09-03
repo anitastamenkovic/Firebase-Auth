@@ -7,6 +7,7 @@
  3. Change Rules
  
 // New rules
+
  service cloud.firestore {
   match /databases/{database}/documents {
     // match logged in user in user coll
