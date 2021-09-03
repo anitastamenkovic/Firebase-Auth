@@ -5,6 +5,7 @@
  1. Create firebase database project and use your own config
  2. Create two collections - guides and users
  3. Change Rules
+ 
 // New rules
  service cloud.firestore {
   match /databases/{database}/documents {
